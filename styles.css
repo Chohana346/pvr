@@ -71,4 +71,14 @@ footer {
 .dropdown .btn:hover {
     background-color: #e2e6ea; /* Hover effect */
 }
-
+/* Custom image size for Experiences section */
+.experience-img {
+    width: cover; /* Make sure the image takes up the full width of the column */
+    height: 250px; /* Set a specific height for the images */
+    object-fit: cover; /* Cover the entire area without distorting the image */
+    border-radius: 10px; /* Optional: Add some rounding to the edges */
+}
+.col-md-6 {
+    padding-left: 5px;  /* Reduce the space between the columns */
+    padding-right: 5px; /* Adjust as needed for your design */
+}
