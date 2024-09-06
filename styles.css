@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+footer {
+    background-color: #333;
+}
+/* Optional styling to improve the look of the header */
+.navbar-nav .nav-link {
+    margin-left: 15px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40; /* Same as navbar background */
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: white;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #495057;
+}
+/* CSS to maintain aspect ratio and resize the images */
+#movieCarousel img {
+    width:cover;
+    max-height: 350px; /* Set maximum height */
+    margin: cover; /* Center the image */
+    display: cover;
+}
+#section-navigation {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 15px 0; /* Adjust padding for vertical size */
+}
+
+#section-navigation .nav-link {
+    color: black; /* Dark text color */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 15px; /* Adjust padding around links */
+}
+
+#section-navigation .nav-link:hover {
+    background-color: #007bff; /* Blue hover effect */
+    color: white; /* White text on hover */
+}
+
