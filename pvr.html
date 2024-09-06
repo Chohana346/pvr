@@ -70,9 +70,9 @@
 </header>
 
 <!-- Recommendation Section -->
-<section id="recommendations" class="py-0">
-    <div class="container">
-        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+<section id="recommendations" class="py-0" style="padding: 0; margin: 0;">
+    <!--<div class="container"> -->
+        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <!-- Movie 1 -->
                 <div class="carousel-item active">
@@ -110,7 +110,7 @@
             <!-- Movies and Cinemas Buttons -->
             <div class="col-md-2">
                 <button class="btn btn-primary w-100 mb-3">Movies</button>
-                <button class="btn btn-primary w-100 mb-3">Cinemas</button>
+                <!--<button class="btn btn-primary w-100 mb-3">Cinemas</button> -->
             </div>
             <!-- Select Movie, Timing, and Cinema Inputs -->
             <div class="col-md-7">
@@ -186,106 +186,130 @@
 <!-- Now Showing Section -->
 <section id="now-showing" class="py-3">
     <div class="container">
-        <h2 class="text-left mb-4">Now Showing</h2>
-        <div class="row">
-            <div class="col-md-8">
-                <!-- Movie Posters -->
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="https://preview.redd.it/why-do-these-fan-made-posters-for-goat-look-better-than-the-v0-toiqourm533d1.jpg?width=1080&crop=smart&auto=webp&s=550fb38b17b94f52c63fd02f381ca323b87fa6fd" class="img-fluid" alt="Movie 2">
-                        <h5>Movie GOAT</h5>
-                        <p>Language: Tamil,Telugu</p>
-                        <p>Genre: Action</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNzFjOGI1MmEtZmYyNC00NTczLWE5ZjEtMjQ3ZDFiNGNmY2E5XkEyXkFqcGdeQXVyMTU4NDUzMjAx._V1_.jpg" class="img-fluid" alt="Movie 2">
-                        <h5>Movie Saripodha Sanivaram </h5>
-                        <p>Language: Telugu</p>
-                        <p>Genre: Drama</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="https://cdn.123telugu.com/content/wp-content/uploads/2024/09/35-1.jpg" class="img-fluid" alt="Movie 2">                        
-                        <h5>Movie 35-Chinna Katha Kadhu</h5>
-                        <p>Language: Telugu</p>
-                        <p>Genre: Family Drama/Comedy</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>  
-                    <div class="col-md-3">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg" class="img-fluid" alt="Movie 2">
-                        <h5>Movie Deadpool & Wolverine</h5>
-                        <p>Language: English,Telugu</p>
-                        <p>Genre: Action/Comedy</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>  
-                    <div class="col-md-3">
-                        <img src="https://www.cinejosh.com/newsimg/newsmainimg/committee-kurrollu_b_2007240930.jpg" class="img-fluid" alt="Movie 2">
-                        <h5>Committee Kurrollu</h5>
-                        <p>Language: Telugu</p>
-                        <p>Genre: Drama</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>  
-                    <div class="col-md-3">
-                        <img src="https://www.dreamworks.com/storage/cms-uploads/kung-fu-panda-4-he-poster.jpg" class="img-fluid" alt="Movie 2">
-                        <h5>Kung Fu Panda 4</h5>
-                        <p>Language: Telugu,English</p>
-                        <p>Genre: Comedy/Advanture</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div> 
-                    <div class="col-md-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBoRdw0QrE2e-4hr6S0V-ViutfX_uUWh6TGw&s" class="img-fluid" alt="Movie 2">
-                        <h5>Inside Out 2</h5>
-                        <p>Language: English</p>
-                        <p>Genre: Comedy/Advanture</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div> 
-                    <div class="col-md-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzoGZsUaJZcW0sK9hHupDTcAw5E5XEWAC8Uw&s" class="img-fluid" alt="Movie 2">
-                        <h5>DETECTIVE CONAN VS. KID THE PHANTOM THIEF</h5>
-                        <p>Language: Japanese</p>
-                        <p>Genre: Anime,Crime,Mystery</p>
-                        <a href="#" class="btn btn-warning">Book Now</a>
-                        <a href="#" class="btn btn-outline-secondary">Details</a>
-                    </div>                
-                    <!-- Repeat for other movies -->
+        <!-- Header for Now Showing Section -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Now Showing</h2>
+            <div class="d-flex">
+                <!-- All Genres Dropdown -->
+                <div class="dropdown me-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownGenres" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Genres
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownGenres">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        <!-- Add more genres as needed -->
+                    </ul>
+                </div>
+
+                <!-- All Languages Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Languages
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownLanguages">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">Tamil</a></li>
+                        <!-- Add more languages as needed -->
+                    </ul>
                 </div>
             </div>
-            <!-- Dropdown Filters -->
-            <div class="col-md-4">
-                <select class="form-select mb-3">
-                    <option selected>All Genres</option>
-                    <option value="1">Action</option>
-                    <option value="2">Drama</option>
-                </select>
-                <select class="form-select">
-                    <option selected>All Languages</option>
-                    <option value="1">English</option>
-                    <option value="2">Hindi</option>
-                </select>
+        </div>
+
+        <!-- Movie Posters -->
+        <div class="row g-3">
+            <div class="col-md-3">
+                <img src="https://preview.redd.it/why-do-these-fan-made-posters-for-goat-look-better-than-the-v0-toiqourm533d1.jpg?width=1080&crop=smart&auto=webp&s=550fb38b17b94f52c63fd02f381ca323b87fa6fd" class="img-fluid" alt="Movie 2">
+                <h5>GOAT</h5>
+                <p>Tamil,Telugu</p>
+                <p>Action</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
             </div>
+            <div class="col-md-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzFjOGI1MmEtZmYyNC00NTczLWE5ZjEtMjQ3ZDFiNGNmY2E5XkEyXkFqcGdeQXVyMTU4NDUzMjAx._V1_.jpg" class="img-fluid" alt="Movie 2">
+                <h5>Saripodha Sanivaram </h5>
+                <p>Telugu</p>
+                <p>Drama</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div>
+            <div class="col-md-3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/07/35_-_Chinna_Katha_Kaadu.jpg" class="img-fluid" alt="Movie 2">                        
+                <h5>35-Chinna Katha Kadhu</h5>
+                <p>Telugu</p>
+                <p>Family Drama/Comedy</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div>  
+            <div class="col-md-3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg" class="img-fluid" alt="Movie 2">
+                <h5>Deadpool & Wolverine</h5>
+                <p>English,Telugu</p>
+                <p>Action/Comedy</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div>  
+            <div class="col-md-3">
+                <img src="https://www.cinejosh.com/newsimg/newsmainimg/committee-kurrollu_b_2007240930.jpg" class="img-fluid" alt="Movie 2">
+                <h5>Committee Kurrollu</h5>
+                <p>Telugu</p>
+                <p>Drama</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div>  
+            <div class="col-md-3">
+                <img src="https://www.dreamworks.com/storage/cms-uploads/kung-fu-panda-4-he-poster.jpg" class="img-fluid" alt="Movie 2">
+                <h5>Kung Fu Panda 4</h5>
+                <p>Telugu,English</p>
+                <p>Comedy/Advanture</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div> 
+            <div class="col-md-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBoRdw0QrE2e-4hr6S0V-ViutfX_uUWh6TGw&s" class="img-fluid" alt="Movie 2">
+                <h5>Inside Out 2</h5>
+                <p>English</p>
+                <p>Comedy/Advanture</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div> 
+            <div class="col-md-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDE2OTQ0NjEtNmEwMC00NmRjLThiOGMtN2M1N2Q2YWY0NGY4XkEyXkFqcGc@._V1_.jpg" class="img-fluid" alt="Movie 2">
+                <h5>Strange Darling</h5>
+                <p>English</p>
+                <p>Horror</p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
+            </div>                
+            <!-- Repeat for other movies -->
         </div>
     </div>
+    </div>
 </section>
+
 
 <!-- Coming Soon Section -->
 <section id="coming-soon" class="py-3">
     <div class="container">
         <h2 class="text-left mb-4">Coming Soon </h2> <h5><a href="#" class="float-end">See All</a></h5>
-        <div class="row">
+        <div class="row g-3">
             <!-- Movie Poster 1 -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <img src="https://m.media-amazon.com/images/M/MV5BYmYyYzZkZTEtOGNjYy00ZWUyLWFiYzYtYjViMzU1ZDk4ODhiXkEyXkFqcGdeQXVyNzI4NjYyMzk@._V1_.jpg" class="img-fluid" alt="Movie 1">
+                <h5>Devara</h5>
+                <p>Telugu</p>
+                <p>Action</p>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
             </div>
-            <div class="col-md-3">
-                <img src="https://m.media-amazon.com/images/M/MV5BYmYyYzZkZTEtOGNjYy00ZWUyLWFiYzYtYjViMzU1ZDk4ODhiXkEyXkFqcGdeQXVyNzI4NjYyMzk@._V1_.jpg" class="img-fluid" alt="Movie 1">
+            <div class="col-md-4">
+                <img src="https://gallery.123telugu.com/content/slideshows/2024/8/Janaka-Aithe-Ganaka19/images/Janaka%20Aithe%20Ganaka.jpg" class="img-fluid" alt="Movie 1">
+                <h5>Janaka Aithe Ganaka</h5>
+                <p>Telugu</p>
+                <p>Drama</p>
+                <a href="#" class="btn btn-outline-secondary">Details</a>
             </div>
             <!-- Repeat for other movies -->
         </div>

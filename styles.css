@@ -44,4 +44,30 @@ footer {
     background-color: #007bff; /* Blue hover effect */
     color: white; /* White text on hover */
 }
+#now-showing img {
+    width: cover; /* Make images responsive and take up full width of their container */
+    height: 300px; /* Set a fixed height if desired */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    display: cover;
+}   
 
+#coming-soon img {
+    width: cover; /* Make images responsive and take up full width of their container */
+    height: 300px; /* Set a fixed height if desired */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    display: cover;
+}  
+#now-showing h2 {
+    margin-right: 20px; /* Add some space between the heading and dropdowns */
+    font-size: 28px; /* Adjust font size for the heading */
+}
+
+.dropdown .btn {
+    background-color: #f8f9fa; /* Light color for dropdowns */
+    border: 1px solid #ddd; /* Border to differentiate */
+    color: #333; /* Text color */
+}
+
+.dropdown .btn:hover {
+    background-color: #e2e6ea; /* Hover effect */
+}
